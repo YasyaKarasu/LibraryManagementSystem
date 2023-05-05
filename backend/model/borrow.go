@@ -227,7 +227,7 @@ func (c *DatabaseConnector) ShowBorrowHistory(cardId int) (*BorrowHistories, err
 	}
 	rows.Close()
 
-	queryBorrowSQL = "SELECT * FROM borrow WHERE card_id = ?"
+	queryBorrowSQL = "SELECT * FROM borrow WHERE card_id = ? by borrow_time DESC, book_id ASC"
 
 	rows, err = tx.Query(queryBorrowSQL, cardId)
 	if err != nil {
