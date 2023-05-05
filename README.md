@@ -6,9 +6,9 @@ A toy library management system, the lab 5 of ZJU Database Concept System course
 
 Use Golang as the backend language.
 
-| Database Driver     | Web Framework | Log Manager     | Config Manager |
-| ------------------- | ------------- | --------------- | -------------- |
-| go-sql-driver/mysql | labstack/echo | sirupsen/logrus | spf13/viper    |
+| Database Driver | Web Framework | Log Manager     | Config Manager |
+| --------------- | ------------- | --------------- | -------------- |
+| database/sql    | labstack/echo | sirupsen/logrus | spf13/viper    |
 
 ### Code Structure
 
