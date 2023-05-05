@@ -729,7 +729,7 @@ const handlerEdit = (row) => {
 
     console.log(formValue.value)
     dialog.create({
-        title: '添加图书',
+        title: '编辑图书',
         content: () => h(
             NCard,
             [
